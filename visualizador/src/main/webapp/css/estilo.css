@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+#mapid { 
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%; 
+	height: 100%;
+	z-index:1;
+}
+
+#marcadores {
+	position: absolute;
+	top: 100px;
+	right: 10px;
+	width: 100px; 
+	height: 500px;
+	z-index:999;
+	border: 1px solid black;
+	background-color: rgba(255,255,255,0.5);
+}
+
+.div_marcador {
+	text-align: center;
+}
