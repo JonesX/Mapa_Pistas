@@ -16,7 +16,7 @@ public class MensagensKafka implements Runnable{
     	props = new Properties();
     	
     	props.put("bootstrap.servers", "192.168.25.102:9092");
-        props.put("group.id", "mapqueue");
+        props.put("group.id", "filaExibicaoCoordenada");
         props.put("auto.offset.reset", "earliest");
         props.put("enable.auto.commit", "true");
         props.put("auto.commit.interval.ms", "1000");
@@ -25,7 +25,7 @@ public class MensagensKafka implements Runnable{
         props.put("value.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
 
         consumer = new KafkaConsumer<String, String>(props);
-        consumer.subscribe(Arrays.asList("mapqueue"));
+        consumer.subscribe(Arrays.asList("filaExibicaoCoordenada"));
     }
     
     
